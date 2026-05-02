@@ -4,35 +4,35 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                echo '📥 Checking out source code...'
+                echo ' Checking out source code...'
                 checkout scm
             }
         }
 
         stage('Install Dependencies') {
             steps {
-                echo '📦 Installing npm dependencies...'
+                echo ' Installing npm dependencies...'
                 sh 'npm install'
             }
         }
 
         stage('Test') {
             steps {
-                echo '🧪 Running tests...'
+                echo ' Running tests...'
                 sh 'npm test -- --watchAll=false --passWithNoTests'
             }
         }
 
         stage('Build') {
             steps {
-                echo '🏗️  Building React app for production...'
+                echo '  Building React app for production...'
                 sh 'npm run build'
             }
         }
 
         stage('Archive') {
             steps {
-                echo '📁 Archiving build output...'
+                echo ' Archiving build output...'
                 archiveArtifacts artifacts: 'build/**', fingerprint: true
             }
         }
@@ -40,7 +40,7 @@ pipeline {
         stage('Deploy') {
             when { branch 'main' }
             steps {
-                echo '🚀 Deploying...'
+                echo ' Deploying...'
                 // Replace with your deploy command:
                 // sh 'scp -r build/* user@yourserver:/var/www/html/'
                 echo 'Add your deploy command here.'
@@ -49,8 +49,8 @@ pipeline {
     }
 
     post {
-        success { echo '✅ Pipeline completed successfully!' }
-        failure { echo '❌ Pipeline failed.' }
+        success { echo ' Pipeline completed successfully!' }
+        failure { echo ' Pipeline failed.' }
         always  { cleanWs() }
     }
 }
