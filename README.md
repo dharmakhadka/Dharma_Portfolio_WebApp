@@ -1,4 +1,4 @@
-# 🚀 Dharma Khadka — DevOps Portfolio
+# Dharma Khadka — DevOps Portfolio
 
 ![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=flat-square&logo=react&logoColor=white)
 ![Jenkins](https://img.shields.io/badge/Jenkins-CI%2FCD-D24939?style=flat-square&logo=jenkins&logoColor=white)
@@ -9,7 +9,7 @@
 
 ---
 
-## 📸 Preview
+## Preview
 
 ```
 ┌─────────────────────────────────────────────┐
@@ -27,19 +27,19 @@
 
 ---
 
-## ✨ Features
+## Features
 
-- ⚡ Built with **React 18** — fast, component-based UI
-- 🎨 Dark terminal aesthetic with custom animated cursor
-- 💻 Animated **live terminal** on the hero section
-- 📱 Fully **responsive** across all screen sizes
-- 🔧 **Jenkins CI/CD pipeline** — auto build, test & deploy on push
-- 🐳 **Dockerised** with multi-stage build (Node → Nginx)
-- 📬 **Contact form** ready to connect to any form backend
+- Built with **React 18** — fast, component-based UI
+- Dark terminal aesthetic with custom animated cursor
+- Animated **live terminal** on the hero section
+- Fully **responsive** across all screen sizes
+- **Jenkins CI/CD pipeline** — auto build, test & deploy on push
+- **Dockerised** with multi-stage build (Node → Nginx)
+- **Contact form** ready to connect to any form backend
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 portfolio-final/
@@ -64,7 +64,7 @@ portfolio-final/
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Category | Technology |
 |----------|-----------|
@@ -76,7 +76,7 @@ portfolio-final/
 
 ---
 
-## ⚙️ Getting Started
+##  Getting Started
 
 ### Prerequisites
 - Node.js >= 18
@@ -108,7 +108,7 @@ Output is in the `/build` folder — ready to serve with any static file server.
 
 ---
 
-## 🐳 Docker
+##  Docker
 
 ```bash
 # Build the image
@@ -122,7 +122,7 @@ Open [http://localhost](http://localhost) — served by Nginx.
 
 ---
 
-## 🔁 Jenkins CI/CD Pipeline
+## Jenkins CI/CD Pipeline
 
 The `Jenkinsfile` defines a 6-stage pipeline:
 
@@ -145,7 +145,7 @@ Checkout → Install → Test → Build → Archive → Deploy
 2. Pipeline script from **SCM → Git**
 3. Paste your GitHub repo URL
 4. Branch: `*/main` | Script Path: `Jenkinsfile`
-5. Click **Build Now** ✅
+5. Click **Build Now** 
 
 ### GitHub Webhook (auto-trigger on push)
 
@@ -159,7 +159,7 @@ Event       : Just the push event
 
 ---
 
-## 📝 Customisation
+## Customisation
 
 To make this your own, update the following files:
 
@@ -173,13 +173,7 @@ To make this your own, update the following files:
 
 ---
 
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
-## 🙋‍♂️ Author
+## Author
 
 **Dharma Khadka**
 - GitHub: [@dharmakhadka](https://github.com/dharmakhadka)
@@ -187,4 +181,3 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-> ⭐ If you found this useful, consider giving it a star on GitHub!
